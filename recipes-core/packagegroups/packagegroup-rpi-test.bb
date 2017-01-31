@@ -18,10 +18,13 @@ RDEPENDS_${PN} = "\
     crda \
     bluez5 \
 "
-
-RRECOMMENDS_${PN} = "\
+#PTZ170124 wazza ?
+RRECOMMENDS_${PN} ??= "\
     bigbuckbunny-1080p \
     bigbuckbunny-480p \
     bigbuckbunny-720p \
+    ${MACHINE_EXTRA_RRECOMMENDS} \
+"
+RRECOMMENDS_${PN} = "\
     ${MACHINE_EXTRA_RRECOMMENDS} \
 "
